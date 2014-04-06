@@ -1,5 +1,5 @@
 $(function () {
-    fakewaffle.responsiveTabs(['xs', 'sm', 'md']);
+    
     var vm = function () {
         var self = this;
         self.notifications = ko.observableArray([]);
