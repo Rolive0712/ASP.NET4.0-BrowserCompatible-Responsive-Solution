@@ -26,7 +26,7 @@ namespace DataAccessLibrary.Repository
             string fullname = null;
             try
             {
-                var query = "select last_name +', ' + first_name as 'FullName' from person where tso_id = @soeid";
+                var query = "select last_name +', ' + first_name as 'FullName' from person where id = @id";
                 using (var db = BaseUtility.OpenConnection())
                 {
                     fullname = db.Query<string>(query, new { soeid = soeid }).SingleOrDefault();
@@ -46,8 +46,9 @@ namespace DataAccessLibrary.Repository
             {
                 using (var db = BaseUtility.OpenConnection())
                 {
-                     list = db.Query<NotificationsDetail>("PMTDB.dbo.usp_GetProjectNotifications",
-                        new { Id = empId, role = RoleId, NotificationTypeID = NotificationTypeIds, BOW_Flag_Bit = BOWFlag }, commandType: CommandType.StoredProcedure);//.ToList();
+                     list = db.Query<NotificationsDetail>("<SP NAME>",
+                        new { Id = empId, role = RoleId, NotificationTypeID = NotificationTypeIds, 
+                        BOW_Flag_Bit = BOWFlag }, commandType: CommandType.StoredProcedure);//.ToList();
                 }
 
             }
