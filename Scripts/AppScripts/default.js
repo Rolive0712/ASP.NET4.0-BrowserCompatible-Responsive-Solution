@@ -1,4 +1,5 @@
 $(function () {
+    fakewaffle.responsiveTabs(['xs', 'sm', 'md']);
     var vm = function () {
         var self = this;
         self.notifications = ko.observableArray([]);
@@ -8,7 +9,7 @@ $(function () {
             $('#searchLoadingIcon').show();
 
             var deferredPromise = dataservice.getPromise({
-                url: "WebServices/<servicename>.asmx/GetNotificationsList",
+                url: "WebServices/PTSNotifications.asmx/GetNotificationsList",
                 type: "POST",
                 data: "{'empId':'1000297015-0','RoleId':-1, 'NotificationTypeIds':'', 'BOWFlag':false}"
             });
