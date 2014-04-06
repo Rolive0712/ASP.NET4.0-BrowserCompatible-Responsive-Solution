@@ -38,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="nav nav-tabs responsive" id="myTab">
+                <ul class="nav nav-tabs responsive" id="notificationTab">
                     <li class="active"><a href="#prjDeliverables">Project deliverables</a></li>
                     <li><a href="#progExceptions">Milestone & Program Exceptions</a></li>
                     <li><a href="#timesheetExceptions">Timesheet Exceptions</a></li>
@@ -207,5 +207,16 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $('#notificationTab a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        });
+
+        (function ($) {
+            fakewaffle.responsiveTabs(['xs', 'sm', 'md']);
+        })(jQuery);
+
+    </script>
     <script src="Scripts/AppScripts/default.js" type="text/javascript"></script>
 </asp:Content>
