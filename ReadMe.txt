@@ -5,3 +5,4 @@
 5. The solution/site can be viewed on IE8 with UI responsiveness.
 6. Knockout used for data binding
 7. Micro ORM "Dapper" used for ORM mapping with SP's
+8. Install dapper from Nuget package. On VS2010, run "Install-Package dapper" on PMC.
