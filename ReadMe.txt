@@ -4,3 +4,4 @@
 4. Watchout for "html5shiv" & "respond.js" added in Master page to provide IE8 compatibility with bootstrap version 3.1.
 5. The solution/site can be viewed on IE8 with UI responsiveness.
 6. Knockout used for data binding
+7. Micro ORM "Dapper" used for ORM mapping with SP's
