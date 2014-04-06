@@ -32,6 +32,7 @@
     <script src="SampleTemplates/SiteBootStrapTemplates/docs.min.js" type="text/javascript"></script>
     <script src="Scripts/DataService.js" type="text/javascript"></script>
     <script src="Scripts/excanvas.compiled.js" type="text/javascript"></script>
+    <script src="Scripts/responsive-tabs.js" type="text/javascript"></script>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
