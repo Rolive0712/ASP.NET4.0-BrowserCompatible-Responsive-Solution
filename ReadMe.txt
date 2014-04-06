@@ -6,3 +6,14 @@
 6. Knockout used for data binding
 7. Micro ORM "Dapper" used for ORM mapping with SP's
 8. Install dapper from Nuget package. On VS2010, run "Install-Package dapper" on PMC.
+9. The solution uses the following js files to create graphs on landing page.
+   a. RGraph.common.core.js
+   b. RGraph.common.key.js
+   c. RGraph.common.dynamic.js
+   d. RGraph.common.tooltips.js
+   e. RGraph.common.effects.js
+   f. RGraph.pie.js
+   g. RGraph.line.js
+   h. RGraph.bar.js
+   i. jquery.flippy.js
+10."excanvas.compiled.js" script on master page provides HTML5 Canvas support for creating/ displaying graphs on IE8 as well.
