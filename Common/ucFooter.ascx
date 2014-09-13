@@ -1,4 +1,4 @@
-<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucFooter.ascx.cs" Inherits="RiskManagementDashboard.Common.ucFooter" %>
+
 <div class="clearfix">
 </div>
 <div id="footer">
